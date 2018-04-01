@@ -1,0 +1,11 @@
+{
+  "name": "html-js_tools_working",
+  "version": "1.0.0",
+  "description": "html-js_tools_working",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhangqiang1003",
+  "license": "ISC"
+}
