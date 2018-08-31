@@ -1,5 +1,7 @@
 /**
  * 检查移动端设备是处于横屏还是竖屏
+ * landscape 横屏
+ * portrait 竖屏
  */
 
 export default function checkMobileDevHV () {
