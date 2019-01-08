@@ -40,6 +40,13 @@ Publisher.prototype.notice = function () {
     observers[i].update(con); // 订阅者接收信息
   };
 }
+Publisher.prototype.clear = function() {
+  var observers = this.observers;
+  for (var i = 0; i < observers.length; i++) {
+    observers[i] = null; // 注销订阅者
+  };
+  this.observers.length = 0;
+}
 
 // 订阅者
 export function Subscribe() {
