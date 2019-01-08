@@ -1,6 +1,6 @@
 /**
  * 处理查询字符串
- * tips:1.使用encodeURIComponent()函数转码url
+ * tips:1.使用encodeURIComponent()函数转码对应的查询字符串部分
  */
 
 function parseQueryStr () {
