@@ -1,13 +1,13 @@
 /**
  * @desc 格式化现在距${startTime}的相差的时间
- * @param {Data} endTime
+ * @param {Data} endTime // 2019/01/15 10:50:59  or  2019-01-14 10:50:59
  * @return {String}
  */
 
 export function formatRemainTime(endTime) {
-  let startData = new Date(); //开始时间
-  let endDate = new Date(endTime); //结束时间
-  let t = endTime.getTime() - startData.getTime(); //时间差
+  let startData = new Date(); // 开始时间
+  let endDate = new Date(endTime); // 结束时间
+  let t = endDate.getTime() - startData.getTime(); // 时间差
   let d = 0,
     h = 0,
     m = 0,
