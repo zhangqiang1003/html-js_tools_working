@@ -3,21 +3,22 @@
  * @param {String} str
  * @return {Number} nowLv
  */
-export function checkPwd (str) {
+
+export function checkPwdStrong (str) {
     let nowLv = 0;
     if (str.length < 6) {
         return nowLv;
     }
-    if (/[0-9]/.test(str)) {
+    if (/[0-9]/g.test(str)) {
         nowLv++;
     }
-    if (/[a-z]/.test(str)) {
+    if (/[a-z]/g.test(str)) {
         nowLv++;
     }
-    if (/[A-Z]/.test(str)) {
+    if (/[A-Z]/g.test(str)) {
         nowLv++;
     }
-    if (/[\.|-|_|@]/.test(str)) {
+    if (/[\.|-|_|@]/g.test(str)) {
         nowLv++;
         nowLv++;
     }
