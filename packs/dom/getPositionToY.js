@@ -10,11 +10,7 @@ export function getPositionToY(dom, size) {
     scrollDis = null; // 滚动条距离视图顶部的距离
   window.onscroll = function() {
     scrollDis = document.documentElement.scrollTop || document.body.scrollTop;
-    if (oDom.getgetBoundingClientRect) {
-      distance = oDom.getBoundingClientRect().y - size;
-    } else {
-      distance = domPosition - scrollDis - size;
-    }
+    distance = domPosition - scrollDis - size;
     console.log(distance, '这是获取的距离');
   }
 }
