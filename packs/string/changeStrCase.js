@@ -10,6 +10,7 @@ export function ChangeStrCase(str, type) {
   this.type = type;
   this.init();
 }
+
 // 初始化
 ChangeStrCase.prototype.init = function() {
   switch (this.type) {
